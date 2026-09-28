@@ -1321,6 +1321,11 @@ footer small {
 
 
     /* JOURNEY */
+    .journey-card {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
 
     .journey-image {
         height: 350px;
