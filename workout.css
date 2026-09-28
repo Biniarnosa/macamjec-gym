@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    background: #111;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.workout-nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: #f5c400;
+}
+
+.workout-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.workout-logo span {
+    display: block;
+    color: #aaa;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.workout-hero {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.9)
+        );
+}
+
+.workout-hero > p:first-child {
+    color: #f5c400;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.workout-hero h1 {
+    font-size: 65px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.workout-hero h1 span {
+    color: #f5c400;
+}
+
+.hero-description {
+    max-width: 600px;
+    color: #aaa;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   WORKOUT SECTION
+========================= */
+
+.workout-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #f5c400;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+.tricep-heading {
+    margin-top: 100px;
+}
+
+
+/* =========================
+   EXERCISE CARD
+========================= */
+
+.exercise-card {
+    background: #1c1c1c;
+    border: 1px solid #333;
+
+    margin-bottom: 25px;
+    padding: 35px;
+
+    display: grid;
+    grid-template-columns: 90px 1fr;
+
+    gap: 25px;
+
+    transition: 0.3s;
+}
+
+.exercise-card:hover {
+    border-color: #f5c400;
+    transform: translateY(-4px);
+}
+
+.exercise-number {
+    color: #f5c400;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    border-right: 1px solid #333;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.exercise-content h3 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.exercise-purpose {
+    color: #f5c400;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.exercise-content h4 {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.exercise-content ol {
+    padding-left: 22px;
+    color: #aaa;
+}
+
+.exercise-content li {
+    margin-bottom: 8px;
+}
+
+.workout-info {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.workout-info span {
+    border: 1px solid #f5c400;
+    color: #f5c400;
+
+    padding: 7px 13px;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #090909;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #f5c400;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+footer small {
+    color: #666;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .workout-nav {
+        padding: 18px 20px;
+    }
+
+    .workout-hero {
+        min-height: 450px;
+    }
+
+    .workout-hero h1 {
+        font-size: 48px;
+    }
+
+    .workout-section {
+        padding: 75px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .exercise-card {
+        grid-template-columns: 70px 1fr;
+        padding: 28px;
+    }
+
+    .exercise-number {
+        font-size: 32px;
+    }
+
+    .exercise-content h3 {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .workout-nav {
+        padding: 15px;
+    }
+
+    .back-btn {
+        font-size: 10px;
+    }
+
+    .workout-logo {
+        font-size: 19px;
+    }
+
+    .workout-logo span {
+        font-size: 8px;
+    }
+
+    .workout-hero {
+        min-height: 400px;
+        padding: 70px 20px;
+    }
+
+    .workout-hero > p:first-child {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .workout-hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .workout-section {
+        padding: 60px 15px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading p {
+        font-size: 10px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .tricep-heading {
+        margin-top: 70px;
+    }
+
+    .exercise-card {
+        display: block;
+        padding: 25px 20px;
+    }
+
+    .exercise-number {
+        border-right: none;
+        border-bottom: 1px solid #333;
+
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+
+        font-size: 30px;
+    }
+
+    .exercise-content h3 {
+        font-size: 21px;
+    }
+
+    .exercise-purpose {
+        font-size: 12px;
+    }
+
+    .exercise-content ol {
+        font-size: 14px;
+    }
+
+    .workout-info span {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONE
+========================= */
+
+@media (max-width: 400px) {
+
+    .workout-hero h1 {
+        font-size: 32px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .exercise-content h3 {
+        font-size: 19px;
+    }
+
+    .exercise-content ol {
+        font-size: 13px;
+    }
+}
